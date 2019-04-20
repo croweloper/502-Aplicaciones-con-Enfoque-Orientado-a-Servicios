@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://ws.proyecto.empresa.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws.proyecto.empresa.com/">
+
+<xs:element name="hello" type="tns:hello" />
+
+<xs:element name="helloResponse" type="tns:helloResponse" />
+
+<xs:element name="listarPaises" type="tns:listarPaises" />
+
+<xs:element name="listarPaisesResponse" type="tns:listarPaisesResponse" />
+
+<xs:element name="nuevoPais" type="tns:nuevoPais" />
+
+<xs:element name="nuevoPaisResponse" type="tns:nuevoPaisResponse" />
+
+<xs:complexType name="listarPaises">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listarPaisesResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:paisBean" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="paisBean">
+<xs:sequence>
+<xs:element name="idPais" type="xs:int" />
+<xs:element name="nombPais" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nuevoPais">
+<xs:sequence>
+<xs:element name="nombPais" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nuevoPaisResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

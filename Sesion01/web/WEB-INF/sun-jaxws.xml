@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
+  <endpoint implementation="com.empresa.proyecto.ws.WS101" name="WS101" url-pattern="/WS101"/>
+  <endpoint implementation="com.empresa.proyecto.ws.WS202" name="WS202" url-pattern="/WS202"/>
+</endpoints>
