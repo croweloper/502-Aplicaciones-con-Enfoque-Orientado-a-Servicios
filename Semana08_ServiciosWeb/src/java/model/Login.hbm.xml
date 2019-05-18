@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-may-2019 20:01:57 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Login" table="login" catalog="bdejemplo" optimistic-lock="version">
+        <id name="codLog" type="java.lang.Integer">
+            <column name="COD_LOG" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="cliente" class="model.Cliente" fetch="select">
+            <column name="COD_CLI" />
+        </many-to-one>
+        <property name="corLog" type="string">
+            <column name="COR_LOG" length="70" />
+        </property>
+        <property name="pasLog" type="string">
+            <column name="PAS_LOG" length="90" />
+        </property>
+        <property name="tipUsu" type="java.lang.Character">
+            <column name="TIP_USU" length="1" />
+        </property>
+    </class>
+</hibernate-mapping>

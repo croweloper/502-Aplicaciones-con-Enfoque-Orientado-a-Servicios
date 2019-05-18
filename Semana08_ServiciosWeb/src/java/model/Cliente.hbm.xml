@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 17-may-2019 20:01:57 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Cliente" table="cliente" catalog="bdejemplo" optimistic-lock="version">
+        <id name="codCli" type="java.lang.Integer">
+            <column name="COD_CLI" />
+            <generator class="identity" />
+        </id>
+        <property name="nomCli" type="string">
+            <column name="NOM_CLI" length="80" />
+        </property>
+        <property name="apeCli" type="string">
+            <column name="APE_CLI" length="80" />
+        </property>
+        <set name="logins" table="login" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="COD_CLI" />
+            </key>
+            <one-to-many class="model.Login" />
+        </set>
+        <set name="registroUsuarios" table="registro_usuario" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="COD_CLI" />
+            </key>
+            <one-to-many class="model.RegistroUsuario" />
+        </set>
+    </class>
+</hibernate-mapping>
