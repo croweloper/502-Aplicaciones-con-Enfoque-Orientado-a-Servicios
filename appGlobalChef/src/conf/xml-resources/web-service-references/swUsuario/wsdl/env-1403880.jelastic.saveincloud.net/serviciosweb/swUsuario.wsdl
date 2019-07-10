@@ -1,0 +1,226 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://wsdl.globalchef.croweloper.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="swUsuario" targetNamespace="http://wsdl.globalchef.croweloper.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://wsdl.globalchef.croweloper.com/" elementFormDefault="unqualified" targetNamespace="http://wsdl.globalchef.croweloper.com/" version="1.0">
+
+  <xs:element name="ActualizarUsuario" type="tns:ActualizarUsuario"/>
+
+  <xs:element name="ActualizarUsuarioResponse" type="tns:ActualizarUsuarioResponse"/>
+
+  <xs:element name="EliminarUsuario" type="tns:EliminarUsuario"/>
+
+  <xs:element name="EliminarUsuarioResponse" type="tns:EliminarUsuarioResponse"/>
+
+  <xs:element name="Login" type="tns:Login"/>
+
+  <xs:element name="LoginResponse" type="tns:LoginResponse"/>
+
+  <xs:element name="RegistrarUsuario" type="tns:RegistrarUsuario"/>
+
+  <xs:element name="RegistrarUsuarioResponse" type="tns:RegistrarUsuarioResponse"/>
+
+  <xs:element name="getUsuario" type="tns:getUsuario"/>
+
+  <xs:element name="getUsuarioResponse" type="tns:getUsuarioResponse"/>
+
+  <xs:complexType name="ActualizarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="tns:usuario"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="usuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usu_apellido" type="xs:string"/>
+      <xs:element minOccurs="0" name="usu_correo" type="xs:string"/>
+      <xs:element minOccurs="0" name="usu_documento" type="xs:string"/>
+      <xs:element name="usu_estado" type="xs:int"/>
+      <xs:element minOccurs="0" name="usu_foto" type="xs:string"/>
+      <xs:element name="usu_id" type="xs:int"/>
+      <xs:element minOccurs="0" name="usu_nombre" type="xs:string"/>
+      <xs:element minOccurs="0" name="usu_paisid" type="xs:string"/>
+      <xs:element minOccurs="0" name="usu_pass" type="xs:string"/>
+      <xs:element minOccurs="0" name="usu_telefono" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ActualizarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:usuario"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="EliminarUsuario">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="EliminarUsuarioResponse">
+    <xs:sequence/>
+  </xs:complexType>
+
+  <xs:complexType name="Login">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="mail" type="xs:string"/>
+      <xs:element minOccurs="0" name="pass" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LoginResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:usuario"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getUsuario">
+    <xs:sequence>
+      <xs:element name="id" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:usuario"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RegistrarUsuario">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="usuario" type="tns:usuario"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RegistrarUsuarioResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:usuario"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="ActualizarUsuario">
+    <wsdl:part element="tns:ActualizarUsuario" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ActualizarUsuarioResponse">
+    <wsdl:part element="tns:ActualizarUsuarioResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="LoginResponse">
+    <wsdl:part element="tns:LoginResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="EliminarUsuario">
+    <wsdl:part element="tns:EliminarUsuario" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="EliminarUsuarioResponse">
+    <wsdl:part element="tns:EliminarUsuarioResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RegistrarUsuarioResponse">
+    <wsdl:part element="tns:RegistrarUsuarioResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Login">
+    <wsdl:part element="tns:Login" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsuario">
+    <wsdl:part element="tns:getUsuario" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RegistrarUsuario">
+    <wsdl:part element="tns:RegistrarUsuario" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getUsuarioResponse">
+    <wsdl:part element="tns:getUsuarioResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="swUsuario">
+    <wsdl:operation name="ActualizarUsuario">
+      <wsdl:input message="tns:ActualizarUsuario" name="ActualizarUsuario">
+    </wsdl:input>
+      <wsdl:output message="tns:ActualizarUsuarioResponse" name="ActualizarUsuarioResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarUsuario">
+      <wsdl:input message="tns:EliminarUsuario" name="EliminarUsuario">
+    </wsdl:input>
+      <wsdl:output message="tns:EliminarUsuarioResponse" name="EliminarUsuarioResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:Login" name="Login">
+    </wsdl:input>
+      <wsdl:output message="tns:LoginResponse" name="LoginResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsuario">
+      <wsdl:input message="tns:getUsuario" name="getUsuario">
+    </wsdl:input>
+      <wsdl:output message="tns:getUsuarioResponse" name="getUsuarioResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarUsuario">
+      <wsdl:input message="tns:RegistrarUsuario" name="RegistrarUsuario">
+    </wsdl:input>
+      <wsdl:output message="tns:RegistrarUsuarioResponse" name="RegistrarUsuarioResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="swUsuarioSoapBinding" type="tns:swUsuario">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="ActualizarUsuario">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="ActualizarUsuario">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="ActualizarUsuarioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarUsuario">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="EliminarUsuario">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="EliminarUsuarioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="Login">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="LoginResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUsuario">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getUsuario">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getUsuarioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistrarUsuario">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="RegistrarUsuario">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="RegistrarUsuarioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="swUsuario">
+    <wsdl:port binding="tns:swUsuarioSoapBinding" name="swUsuarioPort">
+      <soap:address location="http://env-1403880.jelastic.saveincloud.net/serviciosweb/swUsuario"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

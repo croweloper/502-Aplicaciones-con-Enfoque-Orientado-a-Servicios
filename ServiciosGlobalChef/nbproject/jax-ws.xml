@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="ServicioPrueba">
+      <implementation-class>com.croweloper.prueba.ServicioPrueba</implementation-class>
+    </service>
+    <service name="swUsuario">
+      <implementation-class>com.croweloper.globalchef.wsdl.swUsuario</implementation-class>
+    </service>
+    <service name="swReceta">
+      <implementation-class>com.croweloper.globalchef.wsdl.swReceta</implementation-class>
+    </service>
+    <service name="swPais">
+      <implementation-class>com.croweloper.globalchef.wsdl.swPais</implementation-class>
+    </service>
+    <service name="swGrupoCategorias">
+      <implementation-class>com.croweloper.globalchef.wsdl.swGrupoCategorias</implementation-class>
+    </service>
+    <service name="swCategoria">
+      <implementation-class>com.croweloper.globalchef.wsdl.swCategoria</implementation-class>
+    </service>
+    <service name="swPlato">
+      <implementation-class>com.croweloper.globalchef.wsdl.swPlato</implementation-class>
+    </service>
+    <service name="swChef">
+      <implementation-class>com.croweloper.globalchef.wsdl.swChef</implementation-class>
+    </service>
+    <service name="swPreparacion">
+      <implementation-class>com.croweloper.globalchef.wsdl.swPreparacion</implementation-class>
+    </service>
+    <service name="swIngredientes">
+      <implementation-class>com.croweloper.globalchef.wsdl.swIngredientes</implementation-class>
+    </service>
+  </services>
+  <clients/>
+</jax-ws>
