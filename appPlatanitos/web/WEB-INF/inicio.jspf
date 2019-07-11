@@ -1,0 +1,152 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+
+<div id="index-box">
+
+    <div id="index-box-box1" class="index-box1 margin-bottom">
+        <div id="index-box-box1-box1" class="index-box2 float-left margin-right-1">
+            <h3><a href="#">PARA MUJERES</a></h3>
+
+            <ul>
+                <li><a href="#">Verano 2017</a></li>
+                <li><a href="#">Sandalias</a></li>
+                <li><a href="#">Botas</a></li>
+            </ul>
+
+            <h3><a href="#">PARA HOMBRES</a></h3>
+
+            <ul>
+                <li><a href="#">Zapatillas</a></li>
+                <li><a href="#">Zapatos casuales</a></li>
+                <li><a href="#">Accesorios</a></li>
+            </ul>
+
+            <h3><a href="#">PARA KIDS</a></h3>
+
+            <ul>
+                <li><a href="#">Zapatillas</a></li>
+                <li><a href="#">Accesorios</a></li>
+                <li><a href="#">Ropa</a></li>
+            </ul>
+
+            <h3><a href="#">OFERTAS 24/7</a></h3>
+        </div>
+
+        <div id="index-box-box1-box2" class="float-left">
+
+            <ul>
+                <li><a href="#"><img src="img/cuerpo/slider.jpg" alt="Nike" title="Nike"></a></li>
+            </ul>
+        </div>
+
+        <div id="index-box-box1-box3" class="float-right">
+            <div class="margin-bottom" id="index-box-box1-box3-box1">
+                <a href="#"><img src="img/cuerpo/under.jpg" alt="Under Armour" title="Under Armour"></a>
+            </div>
+
+            <div class="margin-bottom" id="index-box-box1-box3-box2">
+                <a href="#"><img src="img/cuerpo/nike.jpg" alt="Nike" title="Nike"></a>
+            </div>
+
+            <div class="margin-bottom" id="index-box-box1-box3-box3">
+                <a href="#"><img src="img/cuerpo/adidas.jpg" alt="adidas" title="adidas"></a>
+            </div>
+        </div>
+    </div>  
+
+    <div id="index-box-box4" class="index-border-1">
+        <div class="offer offer-index">
+            <div class="titulo-home">
+                <h3>También te recomendamos estos artículos</h3>
+            </div>
+
+            <a class="items" href="#">
+                <img src="img/cuerpo/oferta.png" class="new">
+                <img src="img/cuerpo/Ballerina.jpg" width="160" height="240" class="img">
+                <div id="product_brand">Platanitos</div>
+                <div id="product_model"> CH 7P163</div>
+
+                <div id="product_price" class="italic">
+                    <span class="price">S/ 39.90</span>
+                </div>
+
+                <div id="product_discount" class="italic">
+                    <span>(34% Dcto. de S/59.90)</span>
+                </div>
+            </a>
+
+            <a class="items" href="#">
+                <img src="img/cuerpo/kitty.jpg" width="160" height="240" class="img">
+                <div id="product_brand">Hello Kitty</div>
+                <div id="product_model"> 2GH1980004</div>
+                <div id="product_price" class="italic">
+                    <span class="price">S/ 79.90</span>
+                </div>
+            </a>
+
+            <a class="items" href="#">
+                <img src="img/cuerpo/spider.jpg" width="160" height="240" class="img">
+                <div id="product_brand">Spider Man</div>
+                <div id="product_model"> 3V15SP926145P</div>
+                <div id="product_price" class="italic">
+                    <span class="price">S/ 55.00</span>
+                </div>
+            </a>
+
+            <a class="items" href="#">
+                <img src="img/cuerpo/princesas.jpg" width="160" height="240" class="img">
+                <div id="product_brand">PRINCESAS</div>
+                <div id="product_model"> 2PN0280001</div>
+                <span class="price">S/ 129.90</span> 
+            </a>
+
+            <a class="items" href="#">
+                <img src="img/cuerpo/cyber.png" class="new">
+                <img src="img/cuerpo/Platanito.jpg" width="160" height="240" class="img">
+                <div id="product_brand">Platanitos</div>
+                <div id="product_model"> NFZ6046</div>
+                <div id="product_price" class="italic">
+                    <span class="price">S/ 17.94</span>
+                </div>
+                <div id="product_discount" class="italic">
+                    <span>(40% Dcto. de S/29.90)</span>
+                </div>
+            </a>
+        </div>
+        <!--principales marcas-->
+        <div id="index-box-box2">
+            <div id="index-box-box2-box1">
+                <div class="titulo-home"><h3>
+                        <img src="img/img-Marca/print.png" title="Principales Marcas" alt="Principales Marcas">
+                    </h3>
+                </div>
+
+                <ul class="">
+                    <li><a href="#"><img src="img/img-Marca/1.png" title="Vans" alt="Vans"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/2.jpg" title="UNDER ARMOUR" alt="UNDER ARMOUR"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/3.png" title="UGG" alt="UGG"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/4.png" title="Steve Madden" alt="Steve Madden"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/5.jpg" title="Reebok" alt="Reebok"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/6.png" title="Puma" alt="Puma"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/7.png" title="Nine West" alt="Nine West"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/8.png" title="Nike" alt="Nike"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/9.jpg" title="New Balance" alt="New Blance"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/10.jpg" title="Adidad NEO" alt="Adidad NEO"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/11.png" title="Hush Puppies" alt="Hush Puppies"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/12.png" title="Fila" alt="Fila"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/13.png" title="Converce" alt="Converce"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/14.png" title="Cat" alt="Cat"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/15.png" title="Adidas" alt="Adidas"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/16.jpg" title="Ju" alt="Vans"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/17.png" title="Vans" alt="Vans"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/18.png" title="Vans" alt="Vans"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/19.png" title="Vans" alt="Vans"></a></li>
+                    <li><a href="#"><img src="img/img-Marca/20.png" title="Vans" alt="Vans"></a></li>
+                </ul>
+                <div class="btn-marcas"><a href="javascript:void(0);" class="">Ver todas</a>
+                </div>
+            </div>
+        </div>
+        <!--principales marcas-->
+    </div>
+</div>

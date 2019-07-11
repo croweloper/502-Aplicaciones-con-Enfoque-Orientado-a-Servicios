@@ -1,0 +1,283 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<header>
+    <div id="topmenu">
+        <div class="header-up">
+            <div class="contenedor">
+                <div class="block-prelanding">
+                    <div class="cp-txt">
+                        <span>
+                            <span class="txt-cmpgn"><a href="http/Platanitos.com/eday">eDAY</a>
+                            </span>
+                            , TE QUEDAN:
+                        </span>
+                    </div>
+                    <div class="cp-cntdr">
+                        <div id="clock">
+                            <div class="block">
+                                <span class="days">01</span>
+                            </div>
+                            <div class="space">:</div>
+                            <div class="block">
+                                <span class="hours">04</span>
+                            </div>
+                            <div class="space">:</div>
+                            <div class="block">
+                                <span class="minutes">01</span>
+                            </div><div class="space">:</div>
+                            <div class="block">
+                                <span class="seconds">09</span>
+                            </div>
+                        </div>
+                        <div class="txt-ftr">
+                            <span class="day">DÍA(S)</span>
+                            <span class="hour">HORA(S)</span>
+                            <span class="mint">MIN(S)</span>
+                            <span class="seg">SEG(S)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block-rigth">
+                    <div class="ic-h-up">
+                        <a href="http/Platanitos.com/ayuda">
+                            <i class="material-icons">help_outline</i>
+                            Ayuda
+                        </a>
+                    </div>
+                    <div class="ic-h-up chat">
+                        <i class="material-icons">message</i>
+
+                        <div id="topmenu-box1-box2">
+                            <a>Chat</a>
+                        </div>
+                    </div>
+
+                    <div class="ic-h-up"><a href="index.jsp?id=1">
+                            <i class="material-icons">perm_identity</i>
+                            Ingresar</a>
+                    </div>
+
+                    <div class="header-bolso">
+                        <a href="http://platanitos.com/mi-bolsa">
+                            <div class="dropdown">
+                                <div id="header-bolso" class="dropbtn">
+                                    <i class="material-icons">local_grocery_store</i>
+                                    <span id="maintools-box3-box1-box3">(0) - S/ 0.00</span>
+                                    <i class="material-icons">keyboard_arrow_down</i>
+
+                                </div>
+                                <div id="header-bolso-box1" class="dropdown-content item-new-bag">
+
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-down">
+            <div class="contenedor">
+                <div class="header-one">
+                    <a href="index.html" class="logo-new">
+                        <img src="img/header/logo.png" alt="Logo Platanitos" title="Logo Platanitos"></a>
+                    <div class="block-banner-app">
+                        <a href="http://platanitos.com/movil"> APP DISPONIBLE<img src="img/header/android.png" alt="Android" title="Android">
+                            <img src="img/header/iphone.png" alt="IOS" title="IOS">
+                        </a>
+                    </div>
+
+                    <div class="block-search">
+                        <form action="http://platanitos.com/buscar" method="GET">
+                            <input type="text" name="q" placeholder="Ingresar marca, modelo, etc..." onclick="if (this.placeholder == 'Ingresar marca, modelo, etc...')
+                                        this.placeholder = ''" onblur="if (this.placeholder == '')
+                                                    this.placeholder = 'Ingresar marca, modelo, etc...'" required="">
+                            <button type="submit">
+                                <i class="material-icons">search</i>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="block-cleal">
+                        <p class="cleal-aten">Atención al Cliente 24/7</p>
+                        <p class="cleal-telf">(511) 315-9250</p>
+                    </div>
+                </div>
+
+                <nav>
+                    <ul class="nav">
+                        <li><a href="mujeres.html">Mujeres</a>
+                            <ul class="subs">
+                                <li><a href="#">Zapatos</a>
+                                    <ul>
+                                        <li><a href="Ballerinas.html">Ballerinas</a> </li>
+                                        <li><a href="#">Ver más...</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Botas</a>
+                                    <ul>
+                                        <li><a href="#" class="">Botas largas</a></li>
+                                        <li><a href="#" class="">Ver más...</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Sandalias</a>
+                                    <ul>
+                                        <li><a href="#">Alpargata</a></li>
+                                        <li><a href="#">Ver más...</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Zapatillas</a><ul>
+                                        <li><a href="#">Caminar</a></li>
+                                        <li><a href="#">Ver más...</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Cuero</a>
+                                    <ul>
+                                        <li><a href="#">Botas</a></li>
+                                        <li><a href="#">Ver más...</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Ropa</a><ul>
+                                        <li><a href="#">Bikinis</a></li>
+                                        <li><a href="#">Lencería</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="http://platanitos.com/hombres" class="">Hombres</a>
+
+                            <ul class="subs">
+
+                                <li><a href="#">Zapatillas</a><ul>
+                                        <li><a href="#">Skater</a></li>
+                                        <li><a href="#">Ver más...</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Accesorios</a>
+                                    <ul>
+                                        <li><a href="#">Audífonos
+                                                <li><a href="#">Ver más...</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Ropa</a><ul>
+                                        <li><a href="#">Buzos</a></li>
+                                        <li><a href="#">Ver más...</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Zapatos</a>
+                                    <ul>
+                                        <li><a href="#">Casual</a></li>
+                                        <li><a href="#">Ver más...</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="http://platanitos.com/kids" class="">Kids</a>
+                            <ul class="subs">
+
+                                <li><a href="#">Bebitos</a></li>
+                                <li><a href="#">Niñas</a></li>
+                                <li><a href="#">Niños</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="http://platanitos.com/zapatillas" class="">Zapatillas</a>
+                            <ul class="subs">
+                                <li><a href="#">Kids</a></li>
+                                <li><a href="#">Hombres</a></li>
+                                <li><a href="#">Mujeres</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="http://platanitos.com/catalogo/belleza" class="">Belleza</a>
+                            <ul class="subs">
+                                <li><a href="#">Dama</a>
+                                    <ul>
+                                        <li><a href="#">Perfumes</a></li>
+                                        <li><a href="#">bijoutería</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Joven</a>
+                                    <ul>
+                                        <li><a href="#">Maquillaje - Labios</a></li>
+                                        <li><a href="#">Maquillaje - Ojos</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Caballero</a>
+                                    <ul>
+                                        <li><a href="#">Perfumes</a></li>
+                                        <li><a href="#">Cremas y lociones</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a href="#">Niño / bebe</a>
+                                    <ul>
+                                        <li><a href="#">Perfumes</a></li>
+                                        <li><a href="#">Cuidado personal</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="http://platanitos.com/carteras" class="">Carteras</a>
+                            <ul class="subs">
+                                <li><a href="#">Deportivas</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Fiesta</a></li>
+                                <li><a href="#">Playeras</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="http://platanitos.com/kayser" class="">Ropa</a>
+                            <ul class="subs ropa">
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Buzos</a></li>
+                                        <li><a href="#">Pijamas</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="http://platanitos.com/accesorios" class="">Accesorios</a>
+                            <ul class="subs accessories">
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Audífonos</a></li>
+                                        <li><a href="#">Billeteras</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li><a href="http://platanitos.com/catalogo/casa" class="">Casa</a>
+
+                            <ul class="subs casa">
+                                <li>
+                                    <ul>
+                                        <li><a href="#">Accesorios de Cocina</a></li>
+                                        <li><a href="#">Accesorios de Habitación</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="http://platanitos.com/ofertas" class="">Oferta</a></li>
+                        <li><a href="http://platanitos.com/catalogo/novedades" class="">últimas</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

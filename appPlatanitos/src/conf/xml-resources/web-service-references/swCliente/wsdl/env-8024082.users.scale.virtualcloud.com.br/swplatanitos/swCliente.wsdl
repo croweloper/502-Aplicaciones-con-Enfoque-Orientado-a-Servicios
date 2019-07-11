@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://wsdl.platanitos.com/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="swCliente" targetNamespace="http://wsdl.platanitos.com/">
+  <wsdl:types>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://wsdl.platanitos.com/" elementFormDefault="unqualified" targetNamespace="http://wsdl.platanitos.com/" version="1.0">
+
+  <xs:element name="Login" type="tns:Login"/>
+
+  <xs:element name="LoginResponse" type="tns:LoginResponse"/>
+
+  <xs:element name="Registrar" type="tns:Registrar"/>
+
+  <xs:element name="RegistrarResponse" type="tns:RegistrarResponse"/>
+
+  <xs:element name="validarDNIandMail" type="tns:validarDNIandMail"/>
+
+  <xs:element name="validarDNIandMailResponse" type="tns:validarDNIandMailResponse"/>
+
+  <xs:complexType name="validarDNIandMail">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="dni" type="xs:string"/>
+      <xs:element minOccurs="0" name="mail" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="validarDNIandMailResponse">
+    <xs:sequence>
+      <xs:element name="return" type="xs:int"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Registrar">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="cliente" type="tns:cliente"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="cliente">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="apellidos" type="xs:string"/>
+      <xs:element minOccurs="0" name="contraseña" type="xs:string"/>
+      <xs:element minOccurs="0" name="correo" type="xs:string"/>
+      <xs:element minOccurs="0" name="DNI" type="xs:string"/>
+      <xs:element minOccurs="0" name="genero" type="xs:string"/>
+      <xs:element name="idCliente" type="xs:int"/>
+      <xs:element minOccurs="0" name="nombres" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="RegistrarResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:cliente"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="Login">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="mail" type="xs:string"/>
+      <xs:element minOccurs="0" name="pass" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LoginResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="tns:cliente"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="validarDNIandMailResponse">
+    <wsdl:part element="tns:validarDNIandMailResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="RegistrarResponse">
+    <wsdl:part element="tns:RegistrarResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Login">
+    <wsdl:part element="tns:Login" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="validarDNIandMail">
+    <wsdl:part element="tns:validarDNIandMail" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="Registrar">
+    <wsdl:part element="tns:Registrar" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="LoginResponse">
+    <wsdl:part element="tns:LoginResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="swCliente">
+    <wsdl:operation name="validarDNIandMail">
+      <wsdl:input message="tns:validarDNIandMail" name="validarDNIandMail">
+    </wsdl:input>
+      <wsdl:output message="tns:validarDNIandMailResponse" name="validarDNIandMailResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Registrar">
+      <wsdl:input message="tns:Registrar" name="Registrar">
+    </wsdl:input>
+      <wsdl:output message="tns:RegistrarResponse" name="RegistrarResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input message="tns:Login" name="Login">
+    </wsdl:input>
+      <wsdl:output message="tns:LoginResponse" name="LoginResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="swClienteSoapBinding" type="tns:swCliente">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="validarDNIandMail">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="validarDNIandMail">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="validarDNIandMailResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Registrar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="Registrar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="RegistrarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="Login">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="LoginResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="swCliente">
+    <wsdl:port binding="tns:swClienteSoapBinding" name="swClientePort">
+      <soap:address location="http://env-8024082.users.scale.virtualcloud.com.br/swplatanitos/swCliente"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,175 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<footer>
+    <section class="value">
+        <div class="contenedor">
+            <p><strong>VALOR DE LA FAMILIA PLATANITOS:</strong>“Número 5. Contagia tu positivismo”.</p>
+        </div>
+    </section>
+    <section class="newsletter">
+        <div class="contenedor">
+            <h2>¡BOLETÍN PROMOCIONAL!</h2>
+            <p id="f-msg-mailchimp">Sé el primero en recibir todas las ofertas y promociones :)</p>
+            <form name="f-form-email" id="f-form-email" method="POST">
+                <input type="email" id="f-text-email" name="f-text-email" placeholder="Déjanos aquí tu correo" required="required">
+                <label>
+                    <input type="radio" name="f-option-radio" id="" value="M" required="required">Mujer
+                </label>
+                <label>
+                    <input type="radio" name="f-option-radio" id="" value="H" required="required">Hombre
+                </label>
+                <button type="submit" id="btn-send-email" value="Enviar">
+                    <i class="material-icons">send</i>
+                </button>
+            </form>
+        </div>
+    </section>
+    <section class="process">
+        <div class="contenedor">
+            <article>
+                <a href="#">
+                    <i class="material-icons"></i>
+                    <span>
+                        <h3>DEVOLUCIONES</h3><p>No satisfecho con tu producto. Tu devolución será muy sencilla.</p>
+                    </span>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <i class="material-icons"></i>
+                    <span><h3>TIENDAS</h3><p>Cada vez estamos más cerca de ti. Mira todas nuestras tiendas.</p></span>
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <i class="material-icons"></i>
+                    <span>
+                        <h3>Entrega</h3><p>
+                            ¡WOW! Envío Gratis en menos de 48
+                            horas laborables (Lima).
+                        </p>
+                    </span>
+                </a>
+            </article>
+        </div>
+    </section>
+    <blockquote>
+        <div class="contenedor">
+            <h2>¡Lo que dicen nuestros clientes!</h2>
+            <a href="#" class="btn-green">más comentarios</a>
+        </div>
+    </blockquote>
+    <section class="menu-footer">
+        <div class="contenedor">
+            <article>
+                <h2>Categorias</h2>
+                <aside>
+                    <h3>Calzados</h3>
+                    <ul>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Botas</a></li>
+                        <li><a href="#">Sandalias</a></li>
+                    </ul>
+                </aside>
+                <aside>
+                    <h3>Novedades en:</h3>
+                    <ul>
+                        <li><a href="#">Calzados de mujeres</a></li>
+                        <li><a href="#">Calzados de Hombres</a></li>
+                        <li><a href="#">Accesorios</a></li>
+                    </ul>
+                </aside>
+                <aside>
+                    <h3>Ofertas en:</h3>
+                    <ul>
+                        <li><a href="#">Calzados de mujeres</a></li>
+                        <li><a href="#">Calzados de hombres</a></li>
+                        <li><a href="#">Calzados kids</a></li>
+                    </ul>
+                </aside>
+            </article>
+            <article>
+                <h2>Marcas</h2>
+                <aside>
+                    <ul class="colum-2">
+                        <li><a href="#">adidas</a></li>
+                        <li><a href="#">Nike</a></li>
+                        <li><a href="#">Puma</a></li>
+                        <li><a href="#">Converse</a></li>
+                    </ul>
+                </aside>
+            </article>
+            <article>
+                <h2>Tiendas especiales</h2>
+                <aside>
+                    <ul>
+                        <li><a href="#">Calzados de Mujeres</a></li>
+                        <li><a href="#">Zapatillas</a></li>
+                        <li><a href="#">Sandalias</a></li>
+                        <li><a href="#">Ropa</a></li>
+                    </ul>
+                </aside>
+            </article>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="contenedor">
+            <h2>Sobre Platanitos</h2>
+            <p>Encuentra más que calzados de mujeres hombres y niños online. En Platanitos. com, encontrarás algo más que una tienda online. Encontrarás la calidez de servicio que viene de un negocio familiar desde 1991, cuando abrimos nuestra primera tienda en Miraflores llamada Banana Boutique y que hoy es Platanitos Boutique.</p>
+            <br>
+        </div>
+    </section>
+    <section class="service">
+        <div class="contenedor">
+            <aside>
+                <a href="#"><i class="material-icons">&#xE873;</i><span>Facturas Electrónicas</span></a>
+            </aside>
+            <aside>
+                <a href="#"><i class="material-icons">&#xE88D;</i><span>Compras 100% Seguras</span></a>
+            </aside>
+            <aside>
+                <a href="#"><i class="material-icons">&#xE8FD;</i><span>Te Ayudamos a Comprar</span></a>
+            </aside>
+        </div>
+    </section>
+    <section class="social-foo">
+        <div class="contenedor">
+            <img src="img/footer/5.png" />
+            <img src="img/footer/6.png" />
+            <img src="img/footer/7.png" />
+            <img src="img/footer/8_1.png" />
+        </div>
+    </section>
+
+    <section class="pay-block">
+        <div class="contenedor">
+            <h2>MEDIOS DE PAGO</h2>
+            <img src="img/footer/8.png" />
+            <img src="img/footer/8.1.png" />
+            <img src="img/footer/8.2.png" />
+            <img src="img/footer/8.3.png" />
+            <img src="img/footer/8.4.png" />
+            <img src="img/footer/8.5.png" />
+        </div>
+    </section>
+    <section class="courier">
+        <div class="contenedor">
+            <img src="img/footer/9.png" />
+            <img src="img/footer/9.1.png" />
+        </div>
+    </section>
+    <section class="app">
+        <div class="contenedor">
+            <img src="img/footer/10.png" />
+            <img src="img/footer/10.1.png" />
+        </div>
+    </section>
+    <section class="app">
+        <div class="contenedor">
+            <img src="img/footer/11.png" />
+        </div>
+    </section>
+    <address>
+        <div class="contenedor">© 2016 Platanitos Boutique. Todos los Derechos Reservados  Calle Vulcano N° 126 Urb. Vulcano, Ate, Lima, Perú</div>
+    </address>
+</footer>
