@@ -39,6 +39,7 @@ public class ClienteServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
+            //PrintWriter out = response.getWriter()
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
@@ -83,7 +84,7 @@ public class ClienteServlet extends HttpServlet {
         if (accion.equals("login")) {
             try {
 
-                //ChefDAOImpl objchef = new ChefDAOImpl();
+                
                 String mail = request.getParameter("email");
                 String pass = request.getParameter("password");
 
@@ -93,24 +94,58 @@ public class ClienteServlet extends HttpServlet {
 
                 if (cliente != null) {
                     
-                    HttpSession session = request.getSession(true);
-                    System.out.println(cliente.getNombres());
+                    //HttpSession sesion=request.getSession();
+                    //HttpSession sesion = request.getSession(true);
+                    System.out.println(cliente.getNombres() +" "+ cliente.getApellidos() );
+                    System.out.println(cliente.getDNI());
 
-                    session.setAttribute("clinom", cliente.getNombres());
-                    session.setAttribute("cliape", cliente.getApellidos());
-
-                    session.setAttribute("cliid", cliente.getIdCliente());
-                    session.setAttribute("clidni", cliente.getDNI());
-
+                    request.getSession().setAttribute("clinom", cliente.getNombres()); 
                     
-                    response.sendRedirect("index.jsp?id=2&nombre="+cliente.getNombres());
+                    request.getSession().setAttribute("cliape", cliente.getApellidos());
+                    //request.getSession().setAttribute("cliid", cliente.getIdCliente()+"");
+                    request.getSession().setAttribute("clidni", cliente.getDNI());
+                    
+                    response.sendRedirect("index.jsp?id=2");
+                    
                 } else {
                     response.sendRedirect("index.jsp?id=1");
                 }
 
             } catch (Exception e) {
+                System.out.println("Try Catch Servlet");
                 System.out.println(e.getMessage());
             }
+        }else if(accion.equals("registro")){
+            String nombresreg = request.getParameter("first_name");
+            String apellidosreg = request.getParameter("last_name");
+            String documentoreg = request.getParameter("document");
+            String mailreg = request.getParameter("email2");
+            String passreg = request.getParameter("password2");
+            String genero = request.getParameter("id_genders");
+            
+            int validacion=validarDNIandMail(documentoreg, mailreg);
+                    
+            if (validacion==0) {
+                
+                Cliente clientenuevo=new Cliente();
+                clientenuevo.setNombres(nombresreg);
+                clientenuevo.setApellidos(apellidosreg);
+                clientenuevo.setGenero(genero);
+                clientenuevo.setContraseña(passreg);
+                clientenuevo.setCorreo(mailreg);
+                clientenuevo.setDNI(documentoreg);
+                
+                registrar(clientenuevo);
+                
+                response.sendRedirect("index.jsp?id=9");
+                        
+            }else{
+                response.sendRedirect("index.jsp?id=8");
+            }
+                    
+                            
+                            
+                                    
         }
     }
 

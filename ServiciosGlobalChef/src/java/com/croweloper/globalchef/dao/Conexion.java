@@ -6,7 +6,7 @@ import java.sql.DriverManager;
 public class Conexion {
 	
 	//static String _IP="localhost",_PORT="3306",_BD="bd_globalchef",_USER="root",_PASSWORD="";
-	static String _IP="node33841-env-1403880.jelastic.saveincloud.net",_PORT="3306",_BD="bd_globalchef",_USER="root",_PASSWORD="FSOdic46474";
+	static String _IP="node1930-env-8024082.users.scale.virtualcloud.com.br",_PORT="3306",_BD="bd_globalchef",_USER="root",_PASSWORD="PBVnkc73283";
 	
 	protected static Connection cx;
 

@@ -30,7 +30,7 @@
                 </form>
             </div>
             <div id="ingresar-box2-box2">
-                <form method="POST">
+                <form action="ClienteServlet" method="POST">
                     <h3>Crear tu cuenta</h3>
                     <p>Si no estas registrado puedes hacerlo fácil y rápido a través de nuestro formulario de registro.</p>
                     <div>
@@ -58,13 +58,14 @@
                         <label for="id_genders">Género</label>
                         <select id="id_genders" name="id_genders" required="">
                             <option value="">Género</option>
-                            <option value="1">Mujer</option>
-                            <option value="2">Hombre</option>
+                            <option value="F">Mujer</option>
+                            <option value="M">Hombre</option>
                         </select>
                     </div>
                     <div>
                         <small>Al hacer click en Registrarme aceptas los <a href="/ayuda/terminos-y-condiciones">Términos y condiciones.</a></small>
                     </div>
+                    <input type="hidden" name="accion" value="registro">
                     <button type="submit" class="btn btn-gray">Registrarme</button>
                     <div class="ingresar-fb-box2">
                         <a href="#" class="fb-login"><img src="img/login/facebook.png">Registrarme con Facebook</a>

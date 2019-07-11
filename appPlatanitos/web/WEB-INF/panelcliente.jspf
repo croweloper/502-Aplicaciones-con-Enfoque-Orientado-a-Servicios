@@ -1,20 +1,19 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
 
-<%
-    String nom=request.getParameter("nombre");
-    
-    /*String nombre = (String) session.getAttribute("clinom");
-    String apellido = (String) session.getAttribute("cliape");
 
-    int id = (Integer) session.getAttribute("cliid");
-    String dni = (String) session.getAttribute("clidni");
-    String nombrecompleto=nombre+" "+apellido;*/
+<footer>
+    <section class="about-us">
+        <div class="contenedor">
+            <h2>Bienvenido</h2>
+            <h1><%=(String) session.getAttribute("clinom")+" "+(String) session.getAttribute("cliape") %></h1>
+            
+            <h1><%=session.getAttribute("clidni")%></h1>
 
-%>
-<div id="index-box-box4" class="index-border-1">
-<h2>Bienvenido </h2>
-<h1><%=nom%></h1>
-</div>
-<!--<h1></h1>-->
+            <br>
+        </div>
+    </section>
+
+</footer>
+
 

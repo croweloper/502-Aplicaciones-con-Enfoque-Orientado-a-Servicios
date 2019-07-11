@@ -20,6 +20,12 @@
         <%@include file="WEB-INF/login.jspf" %>
         <% } else if (id.equals("2")) { %>
         <%@include file="WEB-INF/panelcliente.jspf" %>
+        <% } else if (id.equals("9")) { %>
+        <%@include file="WEB-INF/login.jspf" %>
+        <script>alert("Registro Exitoso")</script>
+        <% } else if (id.equals("8")) { %>
+        <%@include file="WEB-INF/login.jspf" %>
+        <script>alert("Correo o DNI ya existente")</script>
         <% } %>
         <%@include file="WEB-INF/footer.jspf" %>
     </body>

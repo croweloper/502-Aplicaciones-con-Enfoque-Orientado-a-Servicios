@@ -80,7 +80,7 @@
         <div class="header-down">
             <div class="contenedor">
                 <div class="header-one">
-                    <a href="index.html" class="logo-new">
+                    <a href="index.jsp" class="logo-new">
                         <img src="img/header/logo.png" alt="Logo Platanitos" title="Logo Platanitos"></a>
                     <div class="block-banner-app">
                         <a href="http://platanitos.com/movil"> APP DISPONIBLE<img src="img/header/android.png" alt="Android" title="Android">
